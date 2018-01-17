@@ -1,0 +1,183 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+q  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+  padding: 20px;
+  z-index: 9999;
+}
+
+.cinfo a:{
+  color: rgba(255,255,255, 0.5);
+}
+.cinfo a:hover{
+  color: rgba(255,255,255, 1);
+}
+
+.logo { 
+width: 1000px;
+height: 600px;
+position: fixed;
+top: 50%;
+left: 50%;
+margin-left: -500px;
+margin-top: -300px;
+background-image: url('../images/logoheader.png');
+background-size: cover;
+background-repeat: no-repeat;
+ overflow: hidden;
+}
+
+.logo-sponsors { 
+width: 1000px;
+height: 600px;
+position: fixed;
+top: 50%;
+left: 50%;
+margin-left: -500px;
+margin-top: -300px;
+background-image: url('../images/sponsors_header.png');
+background-size: cover;
+background-repeat: no-repeat;
+ overflow: hidden;
+}
+.logo-svl { 
+width: 1000px;
+height: 600px;
+position: fixed;
+top: 50%;
+left: 50%;
+margin-left: -500px;
+margin-top: -300px;
+background-image: url('../images/svllogo.svg');
+background-size: cover;
+background-repeat: no-repeat;
+ overflow: hidden;
+}
+.pattern{
+  background-color: whitesmoke;
+  background-image: url(../images/pattern.png);
+  background-size: contain;
+}
+.dcmarv{
+    background-image: url(../images/dcmarv.png);
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .6;
+    mix-blend-mode: multiply;
+    
+}
+
+.svlheader{
+    background-image: url(http://www.sapanverma.in/assets/images/slices/profile/Profile_1.jpg);
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .6;
+    mix-blend-mode: screen;
+    
+}
+
+.ucback{
+    height: 100%;
+    background: linear-gradient(90deg, #990606, #034883);
+    background-size: 400% 400%;
+    overflow: hidden;
+
+-webkit-animation: ucback 10s ease infinite;
+-moz-animation: ucback 10s ease infinite;
+-o-animation: ucback 10s ease infinite;
+animation: ucback 10s ease infinite;
+overflow: hidden;
+
+    } 
+
+ @-webkit-keyframes ucback {
+    0%{background-position:79% 0%}
+    50%{background-position:22% 100%}
+    100%{background-position:79% 0%}
+}
+@-moz-keyframes ucback {
+    0%{background-position:79% 0%}
+    50%{background-position:22% 100%}
+    100%{background-position:79% 0%}
+}
+@-o-keyframes ucback {
+    0%{background-position:79% 0%}
+    50%{background-position:22% 100%}
+    100%{background-position:79% 0%}
+}
+@keyframes ucback {
+    0%{background-position:79% 0%}
+    50%{background-position:22% 100%}
+    100%{background-position:79% 0%}
+}
+
+
+
+@media screen and (max-width: 991px) {
+    .logo { 
+width: 800px;
+height: 480px;
+margin-left: -400px;
+margin-top: -240px;
+}
+.logo-sponsors { 
+width: 800px;
+height: 480px;
+margin-left: -400px;
+margin-top: -240px;
+}
+.dcmarv{
+    opacity: .3;
+}
+
+.intro iframe {
+  height: 300;
+}
+}
+
+@media screen and (max-width: 767px) {
+    .logo { 
+width: 500px;
+height: 300px;
+margin-left: -250px;
+margin-top: -150px;
+}
+.logo-sponsors { 
+width: 500px;
+height: 300px;
+margin-left: -250px;
+margin-top: -150px;
+}
+.intro iframe {
+height: 250;
+}
+}
+
+@media screen and (max-width: 479px) {
+     .logo { 
+width: 300px;
+height: 180px;
+margin-left: -150px;
+margin-top: -90px;
+}
+.logo-sponsors { 
+width: 300px;
+height: 180px;
+margin-left: -150px;
+margin-top: -90px;
+}
+.intro iframe {
+height: 200;
+}
+}
