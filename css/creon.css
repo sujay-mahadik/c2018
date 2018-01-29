@@ -47,6 +47,19 @@ background-size: cover;
 background-repeat: no-repeat;
  overflow: hidden;
 }
+.logo-events { 
+width: 1000px;
+height: 600px;
+position: fixed;
+top: 50%;
+left: 50%;
+margin-left: -500px;
+margin-top: -300px;
+background-image: url('../images/events_header.png');
+background-size: cover;
+background-repeat: no-repeat;
+ overflow: hidden;
+}
 .logo-svl { 
 width: 1000px;
 height: 600px;
@@ -126,12 +139,29 @@ overflow: hidden;
 
 @media screen and (max-width: 991px) {
     .logo { 
+      position: absolute;
+
 width: 800px;
 height: 480px;
 margin-left: -400px;
 margin-top: -240px;
 }
-.logo-sponsors { 
+.logo-sponsors {
+  position: absolute;
+width: 800px;
+height: 480px;
+margin-left: -400px;
+margin-top: -240px;
+}
+.logo-svl {
+  position: absolute;
+width: 1000px;
+height: 600px;
+margin-left: -500px;
+margin-top: -300px;
+}
+.logo-events {
+  position: absolute;
 width: 800px;
 height: 480px;
 margin-left: -400px;
@@ -148,12 +178,33 @@ margin-top: -240px;
 
 @media screen and (max-width: 767px) {
     .logo { 
+      position: absolute;
+
 width: 500px;
 height: 300px;
 margin-left: -250px;
 margin-top: -150px;
 }
-.logo-sponsors { 
+.logo-sponsors {
+  position: absolute;
+
+width: 500px;
+height: 300px;
+margin-left: -250px;
+margin-top: -150px;
+}
+.logo-svl {
+  position: absolute;
+
+width: 800px;
+height: 480px;
+margin-left: -400px;
+margin-top: -240px;
+}
+
+.logo-events {
+  position: absolute;
+
 width: 500px;
 height: 300px;
 margin-left: -250px;
@@ -165,13 +216,33 @@ height: 250;
 }
 
 @media screen and (max-width: 479px) {
-     .logo { 
+     .logo {
+      position: absolute;
+
 width: 300px;
 height: 180px;
 margin-left: -150px;
 margin-top: -90px;
 }
 .logo-sponsors { 
+    position: absolute;
+
+width: 300px;
+height: 180px;
+margin-left: -150px;
+margin-top: -90px;
+}
+.logo-svl { 
+    position: absolute;
+
+width: 500px;
+height: 300px;
+margin-left: -250px;
+margin-top: -150px;
+}
+.logo-events { 
+    position: absolute;
+
 width: 300px;
 height: 180px;
 margin-left: -150px;
