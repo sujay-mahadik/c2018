@@ -1,3 +1,20 @@
+/*
+ * Baron Neue
+================================================================================ */
+@font-face {
+  font-family: "baronneue";
+  src: url("../fonts/baronneue/baronneue.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "baronneue-italic";
+  src:url("../fonts/baronneue/baronneueitalic.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+
 html, body{
     height: 100%;
     margin: 0;
@@ -18,6 +35,43 @@ q  position: fixed;
 }
 .cinfo a:hover{
   color: rgba(255,255,255, 1);
+}
+
+.floater{
+  background-color: none;
+  backface-visibility: .5;
+  top: 30%;
+  left: 0;
+  position: fixed;
+  color: black;
+}
+
+
+.floater ul{
+  margin: 5px 5px;
+  padding:none;
+  background-color: none;
+}
+.floater ul li a{
+    font-size: 1.5em;
+
+}
+.floater ul li{
+
+  background-color: #EAEAEA;
+  border: 5px solid grey;
+  margin-bottom: 5px;
+  padding: .3em .8em;
+  list-style: none;
+  cursor: pointer;
+  border-radius: 5px;
+
+}
+.floater ul li:hover{
+  transition: .5s ease;
+    border: 5px solid black;
+    padding-left: 1.2em;
+
 }
 
 .logo { 
@@ -73,6 +127,20 @@ background-size: cover;
 background-repeat: no-repeat;
  overflow: hidden;
 }
+.logo-comiccon { 
+width: 1000px;
+height: 600px;
+position: fixed;
+top: 50%;
+left: 50%;
+margin-left: -500px;
+margin-top: -300px;
+background-image: url('../images/comicconlogo.png');
+background-size: cover;
+background-repeat: no-repeat;
+ overflow: hidden;
+ opacity: .9;
+}
 .pattern{
   background-color: whitesmoke;
   background-image: url(../images/pattern.png);
@@ -80,6 +148,17 @@ background-repeat: no-repeat;
 }
 .dcmarv{
     background-image: url(../images/dcmarv.png);
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .6;
+    mix-blend-mode: multiply;
+    
+}
+
+.dcmarvbw{
+    background-image: url(../images/dcmarvbw.png);
     height: 100%; 
     background-position: center;
     background-repeat: no-repeat;
@@ -114,6 +193,7 @@ overflow: hidden;
 
     } 
 
+
  @-webkit-keyframes ucback {
     0%{background-position:79% 0%}
     50%{background-position:22% 100%}
@@ -135,10 +215,43 @@ overflow: hidden;
     100%{background-position:79% 0%}
 }
 
-
+.ucbackbw{
+background: linear-gradient(329deg, #ffffff, #a5a7a8);
+height: 100%;
+background-size: 400% 400%;
+overflow: hidden;
+-webkit-animation: ucbackbw 30s ease infinite;
+-moz-animation: ucbackbw 30s ease infinite;
+animation: ucbackbw 30s ease infinite;
+}
+ @-webkit-keyframes ucbackbw {
+    0%{background-position:0% 91%}
+    50%{background-position:100% 10%}
+    100%{background-position:0% 91%}
+}
+@-moz-keyframes ucbackbw {
+    0%{background-position:0% 91%}
+    50%{background-position:100% 10%}
+    100%{background-position:0% 91%}
+}
+@keyframes ucbackbw {
+    0%{background-position:0% 91%}
+    50%{background-position:100% 10%}
+    100%{background-position:0% 91%}
+}
 
 @media screen and (max-width: 991px) {
-    .logo { 
+
+  .floater{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+  
+  }
+  .floater ul li a{
+    font-size: 1em;
+  }
+  .logo { 
       position: absolute;
 
 width: 800px;
@@ -166,6 +279,13 @@ width: 800px;
 height: 480px;
 margin-left: -400px;
 margin-top: -240px;
+}
+.logo-comiccon {
+  position: absolute;
+width: 500px;
+height: 300px;
+margin-left: -250px;
+margin-top: -150px;
 }
 .dcmarv{
     opacity: .3;
